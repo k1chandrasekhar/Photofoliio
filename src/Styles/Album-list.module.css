@@ -1,0 +1,54 @@
+.albumsContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust this based on the parent container's height */
+  }
+
+
+.addAlbumBtn{
+    height: 45px;
+    width: 120px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #07f;
+    border: 2px solid #07f;
+    border-radius: 6px;
+    background-color: hsl(212, 100%, 50%, 0.1);
+}
+
+.cancelBtn{
+    height: 45px;
+    width: 120px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: red;
+    border: 2px solid red;
+    border-radius: 6px;
+    background-color: hsl(0, 100%, 50%, 0.1);
+}
+
+/* Responsive */
+@media screen and (max-width: 1080px){
+    .albumsContainer{
+        width: 80%;
+    }
+}

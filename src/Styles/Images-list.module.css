@@ -1,0 +1,139 @@
+.imagesListContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust this based on the parent container's height */
+  }
+
+.imagesMain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.backImageContainer{
+    padding: 10px;
+    height: 50px;
+    width: 50px; 
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 1px grey;
+
+}
+
+.backIcon{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.searchIcon{
+    height: 35px;
+    width: 35px;
+}
+
+.searchContainer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.searchContainer .searchInput{
+    padding: 1rem;
+    border: 2px solid black;
+    width: 100%;
+    height: 25px;
+    border-radius: 0;
+    outline: auto;
+}
+
+.searchContainer .closeSearch{
+    height: 35px;
+    width: 35px;
+}
+
+.addImageBtn{
+    height: 45px;
+    width: 120px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #07f;
+    border: 2px solid #07f;
+    border-radius: 6px;
+    background-color: hsl(212, 100%, 50%, 0.1);
+}
+
+.cancelBtn{
+    height: 45px;
+    width: 120px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: red;
+    border: 2px solid red;
+    border-radius: 6px;
+    background-color: hsl(0, 100%, 50%, 0.1);
+}
+
+/* Responsive */
+@media screen and (max-width: 1080px){
+    .imagesListContainer{
+        width: 90%;
+    }
+    
+    header{
+        font-size: 0.6rem;
+        width: 100%;
+        margin: 1rem 0 1rem 0;
+        align-items: center;
+    }
+
+    .imagesMain{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .backImageContainer{
+        margin-right: 1.2rem;
+        padding: 8px;
+        height: 35px;
+        width: 40px; 
+    }
+
+    .searchContainer {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 250px;
+    }
+
+    .searchIcon{
+        height: 30px;
+        width: 30px;
+    }
+
+    .addImageBtn{
+        height: 35px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+    
+    .cancelBtn{
+        height: 35px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+}

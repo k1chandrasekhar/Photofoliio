@@ -1,0 +1,79 @@
+.albumFormContainer{
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1.2rem;
+    background-color: #F4F4F4;
+    border-radius: 8px;
+}
+
+.albumForm{
+    margin: 0.6rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.albumForm input{
+    width: 60%;
+    padding: 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: all 50ms ease-in-out;
+}
+
+input:focus{
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: rgb(217, 255, 0);
+}
+
+.createBtn{
+    height: 45px;
+    width: 16%;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #07f;
+    border: none;
+    border-radius: 10px;
+}
+
+.clearBtn{
+    height: 45px;
+    width: 15%;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #FF1300;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1080px){
+    .albumFormContainer{
+        width: 100%;
+        padding: 1rem;
+    }
+    .albumForm{
+        flex-direction: column;
+    }
+    .albumForm input{
+        width: 100%;
+        padding: 16px;
+        border-radius: 20px;
+        font-size: 1rem;
+    }
+    .createBtn{
+        height: 35px;
+        width: 100%;
+    }
+
+    .clearBtn{
+        margin-bottom: 10px;
+        height: 35px;
+        width: 100%;
+    }
+}

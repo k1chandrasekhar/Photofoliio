@@ -1,0 +1,42 @@
+.albumContainer{
+    height: 170px;
+    width: 200px;
+    margin-bottom: 1.2rem;
+    padding: 6px;
+    background-color: #EEEEEE;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.albumContainer:hover{
+    background-color: #07f;
+    color: white;
+}
+
+.imgContainer{
+    height: 80%;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albumImg{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin-top: 4px;
+    text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 1080px){
+    .albumContainer{
+        height: 150px;
+        width: 150px;
+    }
+}

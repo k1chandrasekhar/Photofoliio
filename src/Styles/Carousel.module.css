@@ -1,0 +1,118 @@
+/* Carousel.module.css */
+
+/* Container for the entire carousel */
+.carouselContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */   
+    z-index: 9999; /* Ensure it appears above other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Carousel image container */
+.carouselImageContainer {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the carousel image */
+.carouselImage {
+    width: 90%; /* Adjust the width */
+    height: 90%; /* Adjust the height */
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselImage img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Add shadow effect */
+}
+
+/* Navigation arrows */
+.navigation {
+    padding: 0 2rem;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Right arrow */
+.rightArrow{
+    margin-top: -11px;
+    margin-right: 10px;
+}
+
+/* Close icon */
+.closeIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out; /* Smooth transition for close icon */
+}
+
+.closeIcon:hover {
+    color: red; /* Darker semi-transparent white */
+}
+
+/* Responsive */
+@media screen and (max-width: 1080px){
+    .carouselContainer {
+        padding: 10px; 
+    }
+
+    .carouselImageContainer {
+        width: 100%; 
+        height: 100%; 
+    }
+
+    .carouselImage {
+        width: 100%;
+        height: 100%; 
+    }
+
+    .carouselImage img {
+        border-radius: 0; 
+        box-shadow: none; 
+    }
+
+    .navigation {
+        padding: 0 6px;
+    }
+
+    .rightArrow{
+        margin: 0 10px;
+    }
+
+    .closeIcon {
+        top: 20px; 
+        right: 10px; 
+        font-size: 20px; 
+    }
+}
